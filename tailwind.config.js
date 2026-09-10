@@ -1,0 +1,142 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        // === STITCH EXACT COLOR TOKENS ===
+        'primary': '#003d82',
+        'on-primary': '#ffffff',
+        'primary-container': '#25559d',
+        'on-primary-container': '#b4ccff',
+        'primary-fixed': '#d7e2ff',
+        'primary-fixed-dim': '#abc7ff',
+        'on-primary-fixed': '#001b3f',
+        'on-primary-fixed-variant': '#0c458c',
+        'inverse-primary': '#abc7ff',
+
+        'secondary': '#006c4e',
+        'on-secondary': '#ffffff',
+        'secondary-container': '#78f6c5',
+        'on-secondary-container': '#007152',
+        'secondary-fixed': '#7bf9c8',
+        'secondary-fixed-dim': '#5ddcad',
+        'on-secondary-fixed': '#002115',
+        'on-secondary-fixed-variant': '#00513a',
+
+        'tertiary': '#3f4032',
+        'on-tertiary': '#ffffff',
+        'tertiary-container': '#565748',
+        'on-tertiary-container': '#cdccba',
+        'tertiary-fixed': '#e4e3d0',
+        'tertiary-fixed-dim': '#c8c8b5',
+        'on-tertiary-fixed': '#1b1c10',
+        'on-tertiary-fixed-variant': '#474839',
+
+        'error': '#ba1a1a',
+        'on-error': '#ffffff',
+        'error-container': '#ffdad6',
+        'on-error-container': '#93000a',
+
+        'surface': '#f9f9ff',
+        'surface-dim': '#d1daf4',
+        'surface-bright': '#f9f9ff',
+        'surface-container-lowest': '#ffffff',
+        'surface-container-low': '#f1f3ff',
+        'surface-container': '#e9edff',
+        'surface-container-high': '#e1e8ff',
+        'surface-container-highest': '#d9e2fc',
+        'surface-tint': '#2f5da6',
+        'surface-variant': '#d9e2fc',
+        'on-surface': '#121b2e',
+        'on-surface-variant': '#434751',
+        'inverse-surface': '#273044',
+        'inverse-on-surface': '#edf0ff',
+
+        'background': '#f9f9ff',
+        'on-background': '#121b2e',
+
+        'outline': '#737782',
+        'outline-variant': '#c3c6d2',
+
+        // Brand accent - warm cream
+        'brand-cream': '#F4F3DF',
+        // Green for WhatsApp
+        'whatsapp': '#25D366',
+      },
+      fontFamily: {
+        'display': ['"Plus Jakarta Sans"', 'sans-serif'],
+        'headline': ['"Plus Jakarta Sans"', 'sans-serif'],
+        'body': ['Inter', 'sans-serif'],
+        'label': ['Inter', 'sans-serif'],
+        'caption-font': ['Inter', 'sans-serif'],
+      },
+      fontSize: {
+        'display-lg': ['40px', { lineHeight: '48px', letterSpacing: '-0.02em', fontWeight: '700' }],
+        'display-lg-mobile': ['30px', { lineHeight: '38px', letterSpacing: '-0.015em', fontWeight: '700' }],
+        'headline-xl': ['28px', { lineHeight: '36px', letterSpacing: '-0.01em', fontWeight: '700' }],
+        'headline-xl-mobile': ['24px', { lineHeight: '32px', letterSpacing: '-0.01em', fontWeight: '700' }],
+        'headline-md': ['20px', { lineHeight: '28px', fontWeight: '600' }],
+        'headline-sm': ['16px', { lineHeight: '24px', fontWeight: '600' }],
+        'body-lg': ['18px', { lineHeight: '28px', fontWeight: '400' }],
+        'body-md': ['15px', { lineHeight: '22px', fontWeight: '400' }],
+        'body-sm': ['13px', { lineHeight: '18px', fontWeight: '400' }],
+        'label-md': ['14px', { lineHeight: '20px', fontWeight: '500' }],
+        'label-sm': ['12px', { lineHeight: '16px', letterSpacing: '0.02em', fontWeight: '600' }],
+        'caption': ['11px', { lineHeight: '14px', letterSpacing: '0.03em', fontWeight: '500' }],
+      },
+      spacing: {
+        'space-2xs': '0.25rem',
+        'space-xs': '0.5rem',
+        'space-sm': '0.75rem',
+        'space-md': '1rem',
+        'space-lg': '1.5rem',
+        'space-xl': '2rem',
+        'space-2xl': '3rem',
+        'space-3xl': '4rem',
+        'gutter-mobile': '1rem',
+        'gutter-desktop': '1.5rem',
+        'margin-mobile': '1rem',
+        'margin-tablet': '2rem',
+        'margin-desktop': '3rem',
+      },
+      borderRadius: {
+        'DEFAULT': '0.5rem',
+        'sm': '0.25rem',
+        'md': '0.75rem',
+        'lg': '1rem',
+        'xl': '1.5rem',
+        'full': '9999px',
+      },
+      boxShadow: {
+        'card': '0 2px 6px -1px rgba(23,32,51,0.05), 0 1px 3px -1px rgba(23,32,51,0.03)',
+        'card-hover': '0 8px 18px -4px rgba(37,85,157,0.08), 0 3px 8px -2px rgba(23,32,51,0.04)',
+        'sticky': '0 12px 28px -6px rgba(23,32,51,0.12), 0 4px 10px -2px rgba(23,32,51,0.06)',
+        'header': '0 1px 8px rgba(0,0,0,0.06)',
+      },
+      maxWidth: {
+        'content': '1280px',
+      },
+      animation: {
+        'ping-slow': 'ping 2s cubic-bezier(0, 0, 0.2, 1) infinite',
+        'fade-in': 'fadeIn 0.3s ease-in-out',
+        'slide-up': 'slideUp 0.4s ease-out',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(16px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+      },
+    },
+  },
+  plugins: [],
+}
