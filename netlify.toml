@@ -6,12 +6,9 @@
   command = "npm run build"
   # Vite outputs to dist/ by default
   publish = "dist"
-  # Node version
-  environment = { NODE_VERSION = "20" }
 
 [build.environment]
-  # Public frontend vars are set via Netlify UI / environment variables
-  # VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY are configured in Netlify dashboard
+  NODE_VERSION = "20"
   NODE_ENV = "production"
 
 # SPA routing — redirect all paths to index.html so React Router handles them
