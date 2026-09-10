@@ -10,12 +10,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl">
           {/* Brand */}
           <div className="space-y-space-md">
-            <div className="flex items-center gap-space-sm">
-              <div className="p-space-2xs bg-surface-container-lowest rounded-lg inline-block">
-                <span className="material-symbols-outlined text-[22px] text-primary">health_metrics</span>
-              </div>
-              <span className="font-headline-md text-headline-md text-on-primary">HealthCure</span>
-            </div>
+            <Link to="/" className="inline-block bg-white px-3.5 py-2.5 rounded-lg shadow-sm hover:opacity-95 transition-opacity" aria-label="HealthCure Diagnostics Home">
+              <img
+                src="/logo.png"
+                alt="HealthCure Diagnostics - Accuracy You Can Trust"
+                className="h-10 w-auto object-contain"
+              />
+            </Link>
             <p className="font-body-sm text-body-sm text-primary-fixed-dim leading-relaxed">
               HealthCure Diagnostics delivers high-precision pathology and diagnostic care across Kolkata and Barasat. Operating under stringent NABL and NABH quality benchmarks with compassionate patient-first support.
             </p>

@@ -84,14 +84,12 @@ export default function Header() {
       <div className="bg-surface-container-lowest/95 backdrop-blur-md px-margin-mobile md:px-margin-tablet lg:px-margin-desktop">
         <div className="h-16 max-w-content mx-auto flex items-center justify-between gap-space-md">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-space-sm shrink-0">
-            <div className="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center">
-              <span className="material-symbols-outlined text-on-primary text-[20px]">health_metrics</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-headline-sm text-headline-sm text-primary tracking-tight leading-tight">HealthCure</span>
-              <span className="font-caption text-caption text-on-surface-variant tracking-wider uppercase" style={{ marginTop: '-2px' }}>Diagnostics</span>
-            </div>
+          <Link to="/" className="flex items-center shrink-0 py-1" aria-label="HealthCure Diagnostics Home">
+            <img
+              src="/logo.png"
+              alt="HealthCure Diagnostics - Accuracy You Can Trust"
+              className="h-10 sm:h-11 md:h-12 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Nav */}
