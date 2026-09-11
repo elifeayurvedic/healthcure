@@ -30,6 +30,13 @@ export interface Test {
   display_order: number
   created_at: string
   updated_at: string
+  // Stitch extended attributes
+  method?: string
+  specimen?: string
+  parameters_count?: number
+  badge?: string
+  tagline?: string
+  highlight?: string
 }
 
 export interface HealthPackage {
